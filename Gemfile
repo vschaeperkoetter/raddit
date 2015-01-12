@@ -43,3 +43,6 @@ group :development, :test do
   gem 'spring'
 end
 
+# Added gems to project
+gem 'devise', '~> 3.3.0'
+

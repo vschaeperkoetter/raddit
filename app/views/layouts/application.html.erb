@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<!-- Added for manually for error messages -->
+	<% flash.each do |name, msg| %>
+		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+	<% end %>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>
