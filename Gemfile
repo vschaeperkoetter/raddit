@@ -44,5 +44,5 @@ group :development, :test do
 end
 
 # Added gems to project
-gem 'devise', '~> 3.3.0'
+gem 'devise', '~> 3.4.0'
 
