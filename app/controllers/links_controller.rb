@@ -1,5 +1,7 @@
 class LinksController < ApplicationController
   before_action :set_link, only: [:show, :edit, :update, :destroy]
+  # Added to prevent other users to edit/update/destroy
+  before_filter :authenticate_user!, :except => [:index, :show]
 
   # GET /links
   # GET /links.json
